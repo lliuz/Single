@@ -234,6 +234,16 @@ header{
     }
 }
 
+@media only screen and (max-width:800px) {
+    .comment-children .comment-content,.comment-children .comment-list .comment-meta,.comment-children .comment-list li:last-child,.comment-children .comment-reply {
+        padding-left: 20px
+    }
+
+    .comment-children .avatar {
+        left: -20px
+    }
+}
+
 /* -- 电脑版 */
 @media screen and (min-width: 599px){
     .head-menu{
