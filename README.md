@@ -1,3 +1,5 @@
+修改自[Single 主题](https://github.com/Dreamer-Paul/Single/releases/tag/1.9)，私人使用，以下是原readme。
+
 # Single
 一个简洁大气，含夜间模式的 Typecho 博客模板。
 
