@@ -2,7 +2,7 @@
 <?php $this->need('header.php'); ?>
 
 <main>
-    <div class="wrap min">
+    <div class="wrap mid">
         <section class="post-title">
             <h2><?php $this->title() ?></h2>
 <?php if($this->authorId == $this->user->uid): ?>

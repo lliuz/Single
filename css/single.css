@@ -249,9 +249,9 @@ header{
     .head-menu{
         left: 0;
         right: 0;
-		    justify-content: left;
+		    justify-content: center;
         	position: fixed;
-    left: 4em;
+    left: 0em;
     }
 
     .head-menu > li{
@@ -260,6 +260,14 @@ header{
         margin-right: 1em;
     }
     .head-menu > li:last-child{ margin-right: 0 }
+	
+	/* 
+	.post-content{
+		background-color: #FaFaFa;
+	}
+	.post-content, .post-title, .page-title{
+		padding: 0 0.5em;
+	}*/
 }
 
 /* - 子菜单 */
@@ -289,7 +297,7 @@ header{
         transition: opacity .15s, visibility .15s;
     }
 
-    .toggle-btn{ display: none }
+    .toggle-btn{ display: none }	/*隐藏选项按钮*/
 }
 
 .toggle-btn, .light-btn, .search-btn{
@@ -667,13 +675,13 @@ main img{
     margin-right: .5em;
 }
 
-.article-list a.item-2:before{ content: "-" }
-.article-list a.item-3:before{ content: "--" }
-.article-list a.item-4:before{ content: "---" }
-.article-list a.item-5:before{ content: "----" }
-.article-list a.item-6:before{ content: "-----" }
+.article-list a.item-2:before{ content: "--" }
+.article-list a.item-3:before{ content: "----" }
+.article-list a.item-4:before{ content: "------" }
+.article-list a.item-5:before{ content: "--------" }
+.article-list a.item-6:before{ content: "----------" }
 
-@media screen and (min-width: 800px){
+/*@media screen and (min-width: 800px){
     body.has-trees{
         margin-right: 15em;
     }
@@ -682,7 +690,7 @@ main img{
         opacity: 1;
         visibility: visible;
     }
-}
+}*/
 
 /* - 错误页面 */
 .error-page{
@@ -706,7 +714,7 @@ footer{
 
 footer .buttons{
     right: 1em;
-    bottom: 5em;
+    bottom: 2em;
     z-index: 1;
     position: fixed;
 }
@@ -735,11 +743,16 @@ footer .toggle-list{
 }
 footer .toggle-list:before{ content: '\f00b' }
 
-@media screen and (max-width: 800px){
+/*@media screen and (max-width: 800px){
     footer .toggle-list{
         display: block;
         transform: translateX(0);
     }
+}*/
+
+footer .toggle-list{
+    display: block;
+    transform: translateX(0);
 }
 
 footer .widget{ padding: 2em 0 }
