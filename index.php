@@ -18,7 +18,7 @@ $this->need('header.php');
 <main>
     <div class="wrap min">
         <section class="home-title">
-            <h1><?php $this->options->title() ?></h1>
+            <h2><?php $this->options->title() ?></h2>
             <span><?php $this->options->description() ?></span>
 <?php if ($this->options->home_social): ?>
             <div class="home-social">

@@ -2,7 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php $this->options->charset(); ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><?php $this->archiveTitle(array(
             'category'  =>  _t('%s'),
             'search'    =>  _t('含关键词 %s 的文章'),
@@ -11,8 +14,6 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 <?php if($this->options->favicon): ?>
     <link rel="icon" href="<?php $this->options->favicon() ?>" sizes="192x192"/>
-<?php else: ?>
-    <link rel="icon" href="<?php $this->options->themeUrl('img/icon.png'); ?>" sizes="192x192"/>
 <?php endif; ?>
 <?php if($this -> options -> cdn_set == '0'): ?>
     <link href="<?php $this->options->themeUrl('css/kico.css'); ?>" rel="stylesheet" type="text/css"/>
@@ -45,14 +46,22 @@
 <body<?php if($_COOKIE["night"] == "true"): ?> class="neon"<?php endif; ?>>
 <header>
     <div class="head-title">
-        <h4><?php $this->options->title() ?></h4>
+        <?php if ($this->options->logoUrl): ?>
+        <a id="logo" class="logo" href="<?php $this->options->siteUrl(); ?>">
+            <img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" />
+        </a>
+		<?php else: ?>
+		<a id="logo" class="logo" href="<?php $this->options->siteUrl(); ?>"> <h3> <?php $this->options->title() ?> </h3></a>
+		<?php endif; ?>
     </div>
     <div class="toggle-btn"></div>
     <div class="light-btn"></div>
     <div class="search-btn"></div>
     <form class="head-search" method="post" action="">
-        <input type="text" name="s" placeholder="搜索什么？">
+        <input type="text" name="s" placeholder="站内搜索">
     </form>
+
+
     <ul class="head-menu">
         <li><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>
         <li class="has-child">

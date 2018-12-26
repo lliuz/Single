@@ -16,10 +16,10 @@
 /* 0 - 全局
 -------------------------------- */
 body{
-    color: #555;
-    background: #fafafa;
-    font-weight: lighter;
+    color: #555;	/*正文字体*/
+    background: #f3f3f3;	/*背景颜色*/
     transition: margin .3s, background .3s;
+	font-size:14px;
 }
 
 body:before{
@@ -46,8 +46,8 @@ body::-webkit-scrollbar{
     background: rgba(255, 255, 255, .6);
 }
 
-a{ color: #6f9fc7 }
-a:hover{ color: #9fcff7 }
+a{ color: #6f9fc7 }	/*链接颜色*/
+a:hover{ color: #9fcff7 }	/*链接悬挂颜色*/
 
 h1, h2, h3, h4, h5, h6{ font-weight: normal }
 
@@ -187,6 +187,7 @@ header{
 
     justify-content: center;
 
+
 }
 
 .head-menu > li{
@@ -238,7 +239,9 @@ header{
     .head-menu{
         left: 0;
         right: 0;
-        position: absolute;
+		    justify-content: left;
+        	position: fixed;
+    left: 4em;
     }
 
     .head-menu > li{
@@ -324,7 +327,7 @@ header{
 
 .head-search input{
     height: 2em;
-    width: 10em;
+    width: 14.2em;
     border-radius: 50px;
     padding: .25em .75em;
 }
@@ -624,7 +627,7 @@ main img{
     bottom: 0;
     opacity: 0;
     z-index: 1;
-    width: 15em;
+    width: 18em;
     padding: 1em;
     overflow: auto;
     position: fixed;

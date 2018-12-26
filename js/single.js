@@ -67,7 +67,7 @@ var Single_Theme = function (config) {
 
             var trees = document.createElement("aside");
             trees.className = "article-list";
-            trees.innerHTML += "<h3>文章目录：</h3>";
+            trees.innerHTML += "<h3>目录：</h3>";
 
             for(var i = 0; i < headings.length; i++){
                 headings[i].id = headings[i].innerText;
