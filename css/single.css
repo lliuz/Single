@@ -121,6 +121,10 @@ body.neon .to-top, body.neon .toggle-list{
     border-color: #555;
 }
 
+body.neon .post-content{
+	background-color: transparent;
+}
+
 /* -- 头部 */
 body.neon .head-search input{
     color: #bbb;
@@ -260,14 +264,14 @@ header{
         margin-right: 1em;
     }
     .head-menu > li:last-child{ margin-right: 0 }
-	
-	/* 
+
 	.post-content{
-		background-color: #FaFaFa;
+		background-color: #FcFcFc;
 	}
+	 
 	.post-content, .post-title, .page-title{
 		padding: 0 0.5em;
-	}*/
+	}
 }
 
 /* - 子菜单 */
